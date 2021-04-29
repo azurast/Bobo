@@ -14,10 +14,16 @@ class OnboardingViewController: UIViewController {
     @IBOutlet weak var continueBtn: UIButton!
     
     var slides: [OnboardingSlide] = []
+    var currentPage: Int = 0 {
+        didSet {
+            if currentPage == slides.count - 1 { continueBtn.isHidden = false }
+            else { continueBtn.isHidden = true }
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        continueBtn.isHidden = true
         slides = [
             OnboardingSlide(title: "Welcome to Bobo", description: "Bobo is an app designed for you to be able to read bedtime stories for your kids whenever they may need you! By recording your voice, your child will be able to listen to you reading their bed time stories any night. Let’s begin!", image: #imageLiteral(resourceName: "Moon")),
             OnboardingSlide(title: "Beyond Imagination", description: "It is important for children to imagine as it helps them to be creative and have a dream. In the words of Albert Einstein; “Imagination is more important than knowledge. Knowledge is limited. Imagination encircles the world”.", image: #imageLiteral(resourceName: "Heart")),
@@ -45,6 +51,12 @@ extension OnboardingViewController: UICollectionViewDelegate, UICollectionViewDa
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
+    }
+    
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        let width = scrollView.frame.width
+        currentPage = Int(scrollView.contentOffset.x/width)
+        pageControl.currentPage = currentPage
     }
     
 }
