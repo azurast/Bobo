@@ -28,6 +28,7 @@
 		1B9C4A71263A2CAC00FD38DF /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9C4A70263A2CAC00FD38DF /* UIViewExtension.swift */; };
 		1B9C4A76263A2DCA00FD38DF /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9C4A75263A2DCA00FD38DF /* OnboardingSlide.swift */; };
 		1B9C4A7A263A314100FD38DF /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9C4A79263A314100FD38DF /* OnboardingCollectionViewCell.swift */; };
+		1B9C4A81263A3FA700FD38DF /* SetPasscodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9C4A80263A3FA700FD38DF /* SetPasscodeViewController.swift */; };
 		1BE4CE23263A1B6100F4CFED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE4CE22263A1B6100F4CFED /* AppDelegate.swift */; };
 		1BE4CE25263A1B6100F4CFED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE4CE24263A1B6100F4CFED /* SceneDelegate.swift */; };
 		1BE4CE27263A1B6100F4CFED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE4CE26263A1B6100F4CFED /* ViewController.swift */; };
@@ -61,6 +62,7 @@
 		1B9C4A70263A2CAC00FD38DF /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		1B9C4A75263A2DCA00FD38DF /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
 		1B9C4A79263A314100FD38DF /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
+		1B9C4A80263A3FA700FD38DF /* SetPasscodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetPasscodeViewController.swift; sourceTree = "<group>"; };
 		1BE4CE1F263A1B6100F4CFED /* Bobo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bobo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BE4CE22263A1B6100F4CFED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1BE4CE24263A1B6100F4CFED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -130,7 +132,27 @@
 			isa = PBXGroup;
 			children = (
 				1B9C4A75263A2DCA00FD38DF /* OnboardingSlide.swift */,
-				1B9C4A79263A314100FD38DF /* OnboardingCollectionViewCell.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1B9C4A88263A4ED600FD38DF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1B9C4A89263A4EE100FD38DF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1B9C4A8A263A4EEA00FD38DF /* Models */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -185,6 +207,9 @@
 		1BE4CE3C263A1E1300F4CFED /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				1B9C4A8A263A4EEA00FD38DF /* Models */,
+				1B9C4A88263A4ED600FD38DF /* Views */,
+				1B9C4A89263A4EE100FD38DF /* Controllers */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -206,6 +231,8 @@
 		1BE4CE48263A210F00F4CFED /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1B9C4A80263A3FA700FD38DF /* SetPasscodeViewController.swift */,
+				1B9C4A79263A314100FD38DF /* OnboardingCollectionViewCell.swift */,
 				1BE4CE4C263A22F700F4CFED /* OnboardingViewController.swift */,
 			);
 			path = Controllers;
@@ -308,6 +335,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B9C4A81263A3FA700FD38DF /* SetPasscodeViewController.swift in Sources */,
 				1B9C4A76263A2DCA00FD38DF /* OnboardingSlide.swift in Sources */,
 				1B9C4A71263A2CAC00FD38DF /* UIViewExtension.swift in Sources */,
 				1BE4CE27263A1B6100F4CFED /* ViewController.swift in Sources */,

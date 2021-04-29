@@ -30,10 +30,7 @@ class OnboardingViewController: UIViewController {
             OnboardingSlide(title: "Foster Stronger Bonds", description: "While being physically together is the best way to have a bedtime story together, we understand that it’s not always possible due to work. Hre, Bobo wants to remove some of the barriers  and ensure your children can feel as if you are always with them.", image: #imageLiteral(resourceName: "Hug")),
         ]
     }
-
-    @IBAction func onContinue(_ sender: Any) {
-        
-    }
+    
 }
 
 extension OnboardingViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
