@@ -29,6 +29,10 @@
 		1B9C4A76263A2DCA00FD38DF /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9C4A75263A2DCA00FD38DF /* OnboardingSlide.swift */; };
 		1B9C4A7A263A314100FD38DF /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9C4A79263A314100FD38DF /* OnboardingCollectionViewCell.swift */; };
 		1B9C4A81263A3FA700FD38DF /* SetPasscodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9C4A80263A3FA700FD38DF /* SetPasscodeViewController.swift */; };
+		1B9C4A8C263A55DB00FD38DF /* HomeStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B9C4A8B263A55DB00FD38DF /* HomeStoryboard.storyboard */; };
+		1B9C4A93263A562000FD38DF /* RecordingStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B9C4A92263A562000FD38DF /* RecordingStoryboard.storyboard */; };
+		1B9C4A96263A565800FD38DF /* RecordingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9C4A95263A565800FD38DF /* RecordingViewController.swift */; };
+		1B9C4A9D263A613100FD38DF /* PulsingCALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9C4A9C263A613100FD38DF /* PulsingCALayer.swift */; };
 		1BE4CE23263A1B6100F4CFED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE4CE22263A1B6100F4CFED /* AppDelegate.swift */; };
 		1BE4CE25263A1B6100F4CFED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE4CE24263A1B6100F4CFED /* SceneDelegate.swift */; };
 		1BE4CE27263A1B6100F4CFED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE4CE26263A1B6100F4CFED /* ViewController.swift */; };
@@ -63,6 +67,10 @@
 		1B9C4A75263A2DCA00FD38DF /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
 		1B9C4A79263A314100FD38DF /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 		1B9C4A80263A3FA700FD38DF /* SetPasscodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetPasscodeViewController.swift; sourceTree = "<group>"; };
+		1B9C4A8B263A55DB00FD38DF /* HomeStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeStoryboard.storyboard; sourceTree = "<group>"; };
+		1B9C4A92263A562000FD38DF /* RecordingStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RecordingStoryboard.storyboard; sourceTree = "<group>"; };
+		1B9C4A95263A565800FD38DF /* RecordingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingViewController.swift; sourceTree = "<group>"; };
+		1B9C4A9C263A613100FD38DF /* PulsingCALayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulsingCALayer.swift; sourceTree = "<group>"; };
 		1BE4CE1F263A1B6100F4CFED /* Bobo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bobo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BE4CE22263A1B6100F4CFED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1BE4CE24263A1B6100F4CFED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -139,6 +147,7 @@
 		1B9C4A88263A4ED600FD38DF /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1B9C4A8B263A55DB00FD38DF /* HomeStoryboard.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -155,6 +164,30 @@
 			children = (
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		1B9C4A8E263A55E500FD38DF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1B9C4A90263A55FB00FD38DF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1B9C4A92263A562000FD38DF /* RecordingStoryboard.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1B9C4A91263A55FF00FD38DF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1B9C4A95263A565800FD38DF /* RecordingViewController.swift */,
+				1B9C4A9C263A613100FD38DF /* PulsingCALayer.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		1BE4CE16263A1B6100F4CFED = {
@@ -217,6 +250,9 @@
 		1BE4CE3E263A1E2800F4CFED /* Recording */ = {
 			isa = PBXGroup;
 			children = (
+				1B9C4A8E263A55E500FD38DF /* Models */,
+				1B9C4A90263A55FB00FD38DF /* Views */,
+				1B9C4A91263A55FF00FD38DF /* Controllers */,
 			);
 			path = Recording;
 			sourceTree = "<group>";
@@ -306,8 +342,10 @@
 				1B9C4A6B263A29E900FD38DF /* Poppins-ExtraLight.ttf in Resources */,
 				1B9C4A6C263A29E900FD38DF /* Poppins-BlackItalic.ttf in Resources */,
 				1B9C4A67263A29E900FD38DF /* Poppins-ExtraLightItalic.ttf in Resources */,
+				1B9C4A93263A562000FD38DF /* RecordingStoryboard.storyboard in Resources */,
 				1B9C4A63263A29E900FD38DF /* Poppins-Black.ttf in Resources */,
 				1BE4CE32263A1B6100F4CFED /* LaunchScreen.storyboard in Resources */,
+				1B9C4A8C263A55DB00FD38DF /* HomeStoryboard.storyboard in Resources */,
 				1B9C4A62263A29E900FD38DF /* Poppins-MediumItalic.ttf in Resources */,
 				1BE4CE2F263A1B6100F4CFED /* Assets.xcassets in Resources */,
 				1B9C4A68263A29E900FD38DF /* Poppins-Regular.ttf in Resources */,
@@ -337,10 +375,12 @@
 			files = (
 				1B9C4A81263A3FA700FD38DF /* SetPasscodeViewController.swift in Sources */,
 				1B9C4A76263A2DCA00FD38DF /* OnboardingSlide.swift in Sources */,
+				1B9C4A9D263A613100FD38DF /* PulsingCALayer.swift in Sources */,
 				1B9C4A71263A2CAC00FD38DF /* UIViewExtension.swift in Sources */,
 				1BE4CE27263A1B6100F4CFED /* ViewController.swift in Sources */,
 				1B9C4A7A263A314100FD38DF /* OnboardingCollectionViewCell.swift in Sources */,
 				1BE4CE23263A1B6100F4CFED /* AppDelegate.swift in Sources */,
+				1B9C4A96263A565800FD38DF /* RecordingViewController.swift in Sources */,
 				1BE4CE4D263A22F700F4CFED /* OnboardingViewController.swift in Sources */,
 				1BE4CE25263A1B6100F4CFED /* SceneDelegate.swift in Sources */,
 				1BE4CE2D263A1B6100F4CFED /* Bobo.xcdatamodeld in Sources */,

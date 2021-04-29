@@ -179,21 +179,16 @@ This also keeps your recordings safe.  </string>
                                 <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="******" minimumFontSize="22" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="jmS-sy-jNI">
-                                <rect key="frame" x="453" y="594" width="288" height="34"/>
+                                <rect key="frame" x="452" y="594" width="288" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="BoboDark"/>
                                 <attributedString key="attributedText"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" keyboardAppearance="alert" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="password"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
-                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lZr-HD-Jdu">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lZr-HD-Jdu">
                                 <rect key="frame" x="453" y="644" width="288" height="48"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <color key="backgroundColor" name="BoboGrey"/>
+                                <color key="backgroundColor" name="BoboBlue"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Continue">
@@ -210,6 +205,9 @@ This also keeps your recordings safe.  </string>
                                         <real key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="fR6-Yd-Kpo" kind="showDetail" id="um1-FB-2Xt"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="B4t-HJ-jcu"/>
@@ -225,6 +223,16 @@ This also keeps your recordings safe.  </string>
             </objects>
             <point key="canvasLocation" x="-198.4924623115578" y="666.9064748201439"/>
         </scene>
+        <!--RecordingStoryboard-->
+        <scene sceneID="QhG-zj-8AX">
+            <objects>
+                <viewControllerPlaceholder storyboardName="RecordingStoryboard" id="fR6-Yd-Kpo" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="HTq-oZ-4Ee"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y4i-ew-XSr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-198" y="1057"/>
+        </scene>
     </scenes>
     <color key="tintColor" name="AccentColor"/>
     <resources>
@@ -239,9 +247,6 @@ This also keeps your recordings safe.  </string>
         </namedColor>
         <namedColor name="BoboDark">
             <color red="0.10199999809265137" green="0.10199999809265137" blue="0.18000000715255737" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="BoboGrey">
-            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.77647058823529413" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
